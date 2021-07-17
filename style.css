@@ -1,7 +1,7 @@
 a:focus
 {background-color: #FFCC66;}
 
-<!-- En tête -->
+/* En tête */
 
 nav
 {text-align: center;}
@@ -10,15 +10,24 @@ ul
 {list-style-type: none;}
 
 li
-{display: inline;
- }
+{display: inline;}
 
-<!-- Section 1-->
+/* Première section */
+
+#conteneur
+  {border-radius: 10px grey;
+   display: inline; flex; justify-content: space-around;}
 
 h3 + h4
-{font-size: 1em;
- color: grey;}
+  {font-size: 1em;
+   color: grey;}
 
 p + p
-{font-size: 0.8em;
- color: grey;}
+  {font-size: 0.8em;
+   color: grey;}
+
+
+/*Footer*/
+
+footer 
+  {display: flex;}
