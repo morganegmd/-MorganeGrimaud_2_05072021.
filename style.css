@@ -3,24 +3,20 @@
 { margin: 0px;
   padding: 0px;}
 
-br
-{  }
 
 body 
 { font: normal 1.1em 'Gowun Dodum', sans-serif; 
   overflow-x: hidden;}
  
 ul 
-{ text-align: right; 
-  width: 100%;  
+{ text-align: right;   
   height: 20px; 
   padding-left: 150px;}
  
-li 
-{ float: left;}
+
  
 ul a 
-{ color: white; 
+{ color: blue; 
   padding: 0 10px; 
   text-decoration: none;}
  
@@ -34,40 +30,45 @@ a:focus
 
 /* En tête */
 
-nav
+ /* navigation */
+
+.nav
+{margin-bottom: 10px;}
+
+
+.nav li
 { display: inline;
   width: 350px;
   text-align: right;
   vertical-align: top;}
+
 ul
 {list-style-type: none;}
 
 
- 
-#input
-{display: all;}
+ /*Input*/
+
+#input img p
+{border:solid blue;
+ border-radius: 10px;}
 
 
 /* Les conteneurs */
 
- div
+ div figure
   { border: 10px grey;
     border-radius: 10px;
-    margin}
+    margin:0px;}
  
-h3 + h4
- { font-size: 1em;
-   color: grey;}
 
-p + p
-  {font-size: 0.8em;
-   color: grey;}
 
 
 /*Footer*/
 
-footer p
-[]
+.footer
+{display: flex;
+ flex: }
+
 
 
 
