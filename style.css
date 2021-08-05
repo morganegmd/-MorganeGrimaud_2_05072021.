@@ -3,6 +3,7 @@
 { margin: 0px;
   padding: 0px;}
 
+/* head */
 
 body 
 { font: normal 1.1em 'Gowun Dodum', sans-serif; 
@@ -24,17 +25,19 @@ ul a:hover
 { color: #333;}
 
 
-a:focus
-{ background-color: #FFCC66;}
 
 
-/* En tête */
+
+/* header */
 
  /* navigation */
 
-.nav
-{margin-bottom: 10px;}
+ul
+{list-style-type: none;}
 
+img + .nav
+{display: flex;
+ flex-wrap: wrap;}
 
 .nav li
 { display: inline;
@@ -42,8 +45,8 @@ a:focus
   text-align: right;
   vertical-align: top;}
 
-ul
-{list-style-type: none;}
+a:focus
+{ border: 0.9px #4c4ca28c solid;}
 
 
  /*Input*/
