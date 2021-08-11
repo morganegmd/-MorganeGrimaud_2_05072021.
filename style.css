@@ -36,7 +36,9 @@ ul
 {list-style-type: none;}
 
 nav
-{margin-bottom: 15px;}
+{margin-bottom: 15px;
+ display: flex;
+ align-items: flex-end;}
 
 img + .nav
 {display: flex;
@@ -55,11 +57,29 @@ a:focus
 
 /* Les conteneurs */
 
-figure
+.section
+
 {border: solid lightgrey;
  background-color: lightgrey;
  border-radius: 10px;
  margin: 60px 15px;}
+
+ .section figure
+
+ {margin: 35px 20px;
+  border: solid 2px white;
+  background-color: white;
+  border-radius: 15px;}
+
+.section img
+
+ {border-radius: 20px;}
+.avis 
+{width: 80px;
+ border-radius: none;}
+
+ 
+
  
  /* Première section */
 
@@ -91,12 +111,31 @@ h5
  background-color: lightgrey;
  border-radius: 5px;}
 
+/* Filtres*/
+
+#filtre
+{display: flex;
+ align-items: flex-end;}
+
+#filtre li 
+{display: inherit;
+ margin: 10px 15px;
+ border: solid 2px lightgrey;
+ background-color: lightgrey;
+ border-radius: 10px;}
+
+
+#filtre img
+{display:flex;
+ display: flex-end;
+ width: 25px;
+ border: solid 2px lightblue;
+ background-color: lightblue;
+ border-radius: 10px; }
+
+
 /* Deuxième section */
 
-  article 
-  { border: 10px grey;
-    border-radius: 10px; }
- 
 
 
 
