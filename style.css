@@ -35,9 +35,13 @@ ul a:hover
 ul
 {list-style-type: none;}
 
+nav
+{margin-bottom: 15px;}
+
 img + .nav
 {display: flex;
- flex-wrap: wrap;}
+ flex-direction: column;
+ justify-content: flex-end;}
 
 .nav li
 { display: inline;
@@ -46,31 +50,61 @@ img + .nav
   vertical-align: top;}
 
 a:focus
-{ border: 0.9px #4c4ca28c solid;}
-
-
- /*Input*/
-
-#input img p
-{border:solid blue;
- border-radius: 10px;}
+{border-top: 0.9px #4c4ca28c solid;}
 
 
 /* Les conteneurs */
 
- div figure
+figure
+{border: solid lightgrey;
+ background-color: lightgrey;
+ border-radius: 10px;
+ margin: 60px 15px;}
+ 
+ /* Première section */
+
+#h3
+{margin-top: 35px;}
+
+h5
+{margin-top: 15px;
+ color: grey;}
+
+
+    /*Input*/
+
+.input 
+{margin: 15px 10px;
+ margin-right: 450px;
+ display: flex; }
+
+.input img
+{width: 25px;
+ border:solid 2px dodgerblue;
+ background-color: dodgerblue;
+ border-radius: 5px; }
+
+.input p
+{font-size: 0.90em;
+ margin-left: 2px;
+ border: solid 2px lightgrey;
+ background-color: lightgrey;
+ border-radius: 5px;}
+
+/* Deuxième section */
+
+  article 
   { border: 10px grey;
-    border-radius: 10px;
-    margin:0px;}
+    border-radius: 10px; }
  
 
 
 
 /*Footer*/
 
-.footer
+footer div
 {display: flex;
- flex: }
+ flex-direction: all;}
 
 
 
