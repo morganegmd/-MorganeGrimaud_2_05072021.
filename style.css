@@ -6,25 +6,8 @@
 /* head */
 
 body 
-{ font: normal 1.1em 'Gowun Dodum', sans-serif; 
+{ font: normal 1.1em 'Raleway', sans-serif; 
   overflow-x: hidden;}
- 
-ul 
-{ text-align: right;   
-  height: 20px; 
-  padding-left: 150px;}
- 
-
- 
-ul a 
-{ color: blue; 
-  padding: 0 10px; 
-  text-decoration: none;}
- 
-ul a:hover 
-{ color: #333;}
-
-
 
 
 
@@ -35,35 +18,36 @@ ul a:hover
 ul
 {list-style-type: none;}
 
-nav
-{margin-bottom: 15px;
- display: flex;
- align-items: flex-end;}
-
-img + .nav
+.nav
 {display: flex;
- flex-direction: column;
- justify-content: flex-end;}
-
-.nav li
-{ display: inline;
-  width: 350px;
-  text-align: right;
-  vertical-align: top;}
+ flex-direction: row-reverse
+ margin-top: 25px;}
+ 
+ nav ul a 
+{ color: #0065FC; 
+  padding: 0 10px; 
+  text-decoration: none;}
+ 
+nav ul a:hover 
+{color: grey;}
 
 a:focus
-{border-top: 0.9px #4c4ca28c solid;}
+{color: #DEEBFF 
+ border-top: 1px #DEEBFF solid;}
 
 
 /* Les conteneurs */
 
 .section
 
-{border: solid lightgrey;
- background-color: lightgrey;
+{border: solid #F2F2F2;
+ background-color: #F2F2F2;
  border-radius: 10px;
  margin: 60px 15px;}
 
+ .section p
+ {}
+ 
  .section figure
 
  {margin: 35px 20px;
@@ -73,9 +57,12 @@ a:focus
 
 .section img
 
- {border-radius: 20px;}
+ {width: 220px;
+  border-radius: 20px;}
+
 .avis 
-{width: 80px;
+{width: 0.90px;
+ margin-left: 10px;
  border-radius: none;}
 
  
@@ -96,19 +83,21 @@ h5
 .input 
 {margin: 15px 10px;
  margin-right: 450px;
- display: flex; }
+ display: flex; 
+ border-radius: 5px;}
 
-.input img
-{width: 25px;
- border:solid 2px dodgerblue;
- background-color: dodgerblue;
+.input i
+{color: black;
+ width: 20px;
+ border:solid 2px grey;
+ background-color: grey;
  border-radius: 5px; }
 
 .input p
 {font-size: 0.90em;
- margin-left: 2px;
- border: solid 2px lightgrey;
- background-color: lightgrey;
+ margin-left: 25px 15px;
+ border: solid 10px #0065FC;
+ background-color: #0065FC;
  border-radius: 5px;}
 
 /* Filtres*/
@@ -118,19 +107,20 @@ h5
  align-items: flex-end;}
 
 #filtre li 
+{display: flex;}
+
+#filtre p
 {display: inherit;
- margin: 10px 15px;
  border: solid 2px lightgrey;
- background-color: lightgrey;
  border-radius: 10px;}
 
-
-#filtre img
+#filtre i
 {display:flex;
  display: flex-end;
  width: 25px;
- border: solid 2px lightblue;
- background-color: lightblue;
+ color: #0065FC;
+ border: solid 2px #DEEBFF;
+ background-color: #DEEBFF;
  border-radius: 10px; }
 
 
