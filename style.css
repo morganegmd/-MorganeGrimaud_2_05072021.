@@ -19,9 +19,13 @@ ul
 {list-style-type: none;}
 
 .nav
-{display: flex;
- flex-direction: row-reverse
- margin-top: 25px;}
+{
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+ }
+  
+  {margin-top: 30px;}
  
  nav ul a 
 { color: #0065FC; 
@@ -38,6 +42,8 @@ a:focus
 
 /* Les conteneurs */
 
+/*Général*/
+
 .section
 
 {border: solid #F2F2F2;
@@ -46,11 +52,12 @@ a:focus
  margin: 60px 15px;}
 
  .section p
- {}
+ {size: 1.5em;}
  
  .section figure
 
  {margin: 35px 20px;
+  justify-content: space-around;
   border: solid 2px white;
   background-color: white;
   border-radius: 15px;}
@@ -64,6 +71,18 @@ a:focus
 {width: 0.90px;
  margin-left: 10px;
  border-radius: none;}
+
+ /* Particularités conteneur */
+
+/*Conteneur1*/
+
+/*Conteneur2*/
+
+#article2
+{float: right;}
+
+/*Conteneur3*/
+
 
  
 
@@ -131,9 +150,13 @@ h5
 
 /*Footer*/
 
-footer div
+.footer
 {display: flex;
- flex-direction: all;}
+ align-items: row;}
+
+ .foot 
+ {display: flex;
+  align-items: column;}
 
 
 
