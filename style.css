@@ -25,7 +25,7 @@ img
 
   /* header */
 
-#header
+header
 {display: flex;
  flex-wrap: wrap;
  margin-bottom: 60px;}
@@ -167,10 +167,14 @@ h5
      /*Général*/
 
 .starblue
-{color: blue;}
+{color: blue;
+ font-size: 0.8em;
+ margin-top: 15px;}
 
 .stargrey
-{color: grey;}
+{color: lightgrey;
+ font-size: 0.8em;
+ margin-top: 15px;}
 
 
    /*Populaires*/
@@ -220,11 +224,6 @@ h5
  border: white 2px solid;
  border-radius: 15px 0 0 15px}
 
-#populaires i
-{color: #0065FC;
- font-size: 0.8em;
- margin-top: 15px;}
-
  #populaires p
 {font-size: 0.9em;
  margin: 2px 15px 0 0 ; }
@@ -273,10 +272,6 @@ h5
 
 #hébergements p
 {margin: 10px 0;}
-
-#hébergements i
-{color: #0065FC;
-font-size: 0.8em;}
 
 .afficher
 {margin: 20px 45px;
