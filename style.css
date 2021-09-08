@@ -34,7 +34,8 @@ header
     /* navigation */
 
 #nav
-{margin: 18px 0 0 950px;}
+{margin: 18px 0 0 950px;
+ min-width: 1281px;}
 
 #nav a:link
 {color: #0065FC;
@@ -242,17 +243,17 @@ h5
  flex-wrap: wrap;
  margin: 20px 20px ;}
 
-#hébergements
+#hebergements
 {margin: 42px 0;
  width: 60%;
  border: solid 1px #F2F2F2 ;
  background-color: #F2F2F2;
  border-radius: 15px;}
 
-#h3hébergements
+#h3hebergements
 {margin: 30px 0 0 45px;}
 
-#hébergements figure
+#hebergements figure
 {width: 240px;
  margin : 20px;
  border: solid 1px white ;
@@ -260,17 +261,17 @@ h5
  border-radius: 15px;
  box-shadow: 6px 4px 6px 4px #D8D8D8;}
 
-#hébergements figcaption
+#hebergements figcaption
 {margin: 15px;}
 
-#hébergements img
+#hebergements img
 {margin: 2px;
  width: 230px;
  height: 110px;
  border: white 2px solid;
  border-radius: 15px 15px 0 0;}
 
-#hébergements p
+#hebergements p
 {margin: 10px 0;}
 
 .afficher
@@ -280,7 +281,7 @@ h5
 
    /*Activités*/
 
-#activités
+#activites
 {margin: 20px 5px 0 5px;}
 
 .conteneur3
@@ -291,7 +292,7 @@ h5
 { display: flex;
   flex-direction: column;}
 
-#activités figure
+#activites figure
 {display: flex;
  flex: wrap;
  justify-content: space-around;
@@ -301,6 +302,11 @@ h5
  border-radius: 20px;
  box-shadow: 6px 4px 6px 4px #D8D8D8;}
 
+ #activites figcaption
+{margin: 15px;
+ size: 1.5em;
+ font-weight: bolder;}
+ 
 
 .height img
 {width: 250px;
@@ -316,26 +322,22 @@ h5
  border-radius: 15px 15px 0 0}
 
 
-#fort img
+.smallmedium img
 {width: 320px;
  height: 180px;
  border-radius: 15px 15px 0 0}
 
-#fort
+.smallmedium
 {height: 235px;}
 
-#iles img
+.medium img
 {width: 320px;
  height: 140px;
  border-radius: 15px 15px 0 0}
 
-#iles
+.medium
 {height: 200px;}
 
-#activités figcaption
-{margin: 15px;
- size: 1.5em;
- font-weight: bolder;}
  
 
    /*Footer*/
@@ -364,4 +366,12 @@ footer li
 
 
    /*Pour mobile */
-@media-query 
+
+@media screen and (max-width: 1280px)
+
+{ body
+  {margin: 0;}
+  
+ 
+}
+   
