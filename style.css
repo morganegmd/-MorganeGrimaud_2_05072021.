@@ -30,12 +30,15 @@ header
  flex-wrap: wrap;
  margin-bottom: 60px;}
 
+#logo
+{margin: 15px 0 0 15px;}
+
 
     /* navigation */
 
 #nav
-{margin: 18px 0 0 950px;
- min-width: 1281px;}
+{margin: 0 0 0 950px;
+ min-width: 1251px;}
 
 #nav a:link
 {color: #0065FC;
@@ -367,11 +370,193 @@ footer li
 
    /*Pour mobile */
 
-@media screen and (max-width: 1280px)
 
-{ body
-  {margin: 0;}
+  @media screen (max-width: 1253px) 
+
+{ #nav
+  {margin: margin: 0 0 0 650px;}
   
- 
+
+
+  /* header */
+
+header
+{display: none;}
+
+#nav
+{margin: 20px 0;}
+
+#nav a:hover
+{border-top: none;
+ border-bottom: 3px solid #0065FC;}
+
+#nav a:active
+{border-top: none;
+ border-bottom: 3px solid #0065FC;}
+
+#nav  a:visited
+{border-bottom: 3px solid grey;}
+
+/* --- */
+
+#h4
+{font-size: 1.5em;}
+
+h5
+{font-size: 1.3em;}
+
+/* --- */
+
+.input
+{height: 80px;
+ width: 100px;}
+
+.input i
+{
+ width: 50px;
 }
-   
+
+.element2
+ {
+  padding-left: 15px;
+  font-size: 17px;}
+
+.element3
+{
+ height: 60;
+ width: 120px;
+ padding: 13px;
+}
+
+ .element3 a
+ {color: white;
+  font-size: 16px;}
+
+
+  /* --- */
+
+.filtre
+{width: 25%};
+ 
+ 
+ /* --- */
+
+#h5
+{display: inline-flex;
+ width: 12%;}
+
+
+/* --- */
+
+#populaires
+{float: none;
+ margin: 35px 0;
+ width: 100%;}
+
+ 
+#populaires figure
+{margin: 58px 0 50px 30px;
+ width: 400px;}
+
+#populaires figcaption
+{margin: 15px 20px 0 30px;}
+
+#populaires img
+{width: 140px;
+ height: 120px;
+ margin: 3px 25px 3px 3px;
+ }
+
+ #populaires p
+{font-size: 0.9em;
+ margin: 2px 15px 0 0 ; }
+
+.aucoeurp
+{font-size: 0.7em;
+ margin-top: 10px;}
+
+
+/* --- */
+
+
+.conteneur2
+{display: none;
+ margin: 20px 20px ;}
+
+#hebergements
+{margin: 42px 0;
+ width: 100%;}
+
+#h3hebergements
+{margin: 30px 0 0 45px;}
+
+#hebergements figure
+{width: 240px;
+ margin : 20px;}
+
+#hebergements figcaption
+{margin: 15px;}
+
+#hebergements img
+{margin: 2px;
+ width: 230px;
+ height: 110px;}
+
+#hebergements p
+{font-size: 1.3em;}
+
+.afficher
+{margin: 20px 45px;
+ font-size: 1.1em;}
+
+/* --- */
+
+#activites
+{margin: 20px 5px 0 5px;}
+
+.conteneur3
+{display: none;
+ width: 100%;}
+
+
+ #activites figcaption
+{margin: 15px;
+ size: 1.5em;}
+ 
+.height img
+{width: 250px;
+ height: 420px;}
+
+.height 
+{width: 250px;}
+
+.small img
+{width: 300px;
+ height: 165px;}
+
+
+.smallmedium img
+{width: 320px;
+ height: 180px;}
+
+.smallmedium
+{height: 235px;}
+
+.medium img
+{width: 320px;
+ height: 140px;}
+
+.medium
+{height: 200px;}
+
+
+/* --- */
+
+footer
+{width: 100%;}
+
+footer ul
+{font-size: 1.5em; }
+
+
+  }
