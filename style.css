@@ -151,7 +151,7 @@ h5
  /*Fin*/
 
 #h5
-{display: inline-flex;
+{display: flex;
  margin: 10px 0;}
 
 #h5 i
@@ -186,7 +186,7 @@ h5
 #populaires
 {float: right;
  margin: 85px 20px 20px 5px;
- width: 33%;
+ width: 34%;
  display: flex;
  flex: column;
  border: solid 1px #F2F2F2 ;
@@ -207,7 +207,9 @@ h5
 
 #populaires figure
 {display: flex;
- margin: 58px 0 50px 30px;
+ justify-content: center;
+ align-items: stretch;
+ margin: 35px 0 10px 45px;
  width: 400px;
  border: solid 1px white;
  background-color: white;
@@ -222,9 +224,8 @@ h5
  margin: 15px 20px 0 30px;}
 
 #populaires img
-{width: 140px;
+{width: 170px;
  height: 120px;
- margin: 3px 25px 3px 3px;
  border: white 2px solid;
  border-radius: 15px 0 0 15px}
 
@@ -234,7 +235,7 @@ h5
 
 .aucoeurp
 {font-size: 0.7em;
- margin-top: 10px;}
+ margin: 2px 15px 0 0 ;}
 
 
 
@@ -371,7 +372,7 @@ footer li
    /*Pour mobile */
 
 
-  @media screen (max-width: 1253px) 
+  @media screen and (min-width: 768px) and ( max-width: 1253px) 
 
 { #nav
   {margin: margin: 0 0 0 650px;}
@@ -382,6 +383,9 @@ footer li
 
 header
 {display: none;}
+
+#nav
+{margin: margin: 0 0 0 650px;}
 
 #nav
 {margin: 20px 0;}
@@ -397,7 +401,7 @@ header
 #nav  a:visited
 {border-bottom: 3px solid grey;}
 
-/* --- */
+/* Première section */
 
 #h4
 {font-size: 1.5em;}
@@ -405,7 +409,7 @@ header
 h5
 {font-size: 1.3em;}
 
-/* --- */
+/* Input */
 
 .input
 {height: 80px;
@@ -433,20 +437,20 @@ h5
   font-size: 16px;}
 
 
-  /* --- */
+  /* Filtres */
 
 .filtre
 {width: 25%};
  
  
- /* --- */
+ /* Fin */
 
 #h5
-{display: inline-flex;
+{display: flex;
  width: 12%;}
 
 
-/* --- */
+/* Populaires */
 
 #populaires
 {float: none;
@@ -476,12 +480,14 @@ h5
  margin-top: 10px;}
 
 
-/* --- */
+/* Hébergements */
 
 
 .conteneur2
-{display: none;
- margin: 20px 20px ;}
+
+{ display: flex;
+  flex-direction: column;
+  margin: 20px 20px ;}
 
 #hebergements
 {margin: 42px 0;
@@ -509,13 +515,14 @@ h5
 {margin: 20px 45px;
  font-size: 1.1em;}
 
-/* --- */
+/* Activités */
 
 #activites
 {margin: 20px 5px 0 5px;}
 
 .conteneur3
-{display: none;
+{display: flex;
+ flex-direction: column;
  width: 100%;}
 
 
@@ -523,40 +530,36 @@ h5
 {margin: 15px;
  size: 1.5em;}
  
-.height img
-{width: 250px;
- height: 420px;}
 
-.height 
-{width: 250px;}
 
 .small img
-{width: 300px;
+{width: 200px;
  height: 165px;}
 
 
 .smallmedium img
-{width: 320px;
+{width: 380px;
  height: 180px;}
 
 .smallmedium
 {height: 235px;}
 
 .medium img
-{width: 320px;
- height: 140px;}
+{width: 230px;
+ height: 162px;}
 
 .medium
 {height: 200px;}
 
 
-/* --- */
+/* Footer */
 
 footer
-{width: 100%;}
+{margin-top: 25px;
+  width: 100%;}
 
 footer ul
-{font-size: 1.5em; }
+{font-size: 1.2em; }
 
 
   }
