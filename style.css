@@ -29,28 +29,30 @@ header
 {display: flex;
  flex-wrap: wrap;
  justify-content: space-between;
- margin-bottom: 30px;}
-
-#logo
-{margin-top: 15px;}
+ margin: 25px 0 30px 0;}
 
 
     /* navigation */
 
-#nav a:link
-{margin:  35px 35px 0 0;
- width: 150px;}
 
-#balise a:link
+nav 
+{margin-top: 24px;}
+
+nav li
+{margin-right: 30px;
+ width: 200px;}
+
+.balise a:link
 {color: grey;}
 
-#inscrire a:link
+.inscrire a:link
 {color: #0065FC;
  text-decoration: none;}
  
 #nav a:hover
 {color: #0065FC;
- border-top: 2px #0065FC solid;}
+ border-top: 2px #0065FC solid;
+ padding-top: 52px;}
 
 #nav a:active
 {color: #0065FC;
@@ -174,13 +176,11 @@ h5
 
 .starblue
 {color: blue;
- font-size: 0.8em;
- margin-top: 15px;}
+ font-size: 0.8em;}
 
 .stargrey
 {color: lightgrey;
- font-size: 0.8em;
- margin-top: 15px;}
+ font-size: 0.8em;}
 
 
    /*Populaires*/
@@ -197,14 +197,11 @@ h5
 
 #titre
 {display: flex;
- margin: 30px 40px;} 
-
-#h3populaires
-{margin-right: 210px;}
+ justify-content: space-between;
+ margin: 15px 0 0 45px;} 
 
 #titre i
-{margin-top: 5px;
- color: black;
+{color: black;
  font-size: 1.3em;}
 
 #populaires figure
@@ -221,8 +218,8 @@ h5
 #populaires figcaption
 {display: flex;
  flex-direction: row;
- align-content: stretch;
- justify-content: flex-end;
+ align-content: flex-start;
+ justify-content: space-around;
  margin: 15px 20px 0 30px;}
 
 #populaires img
@@ -239,6 +236,8 @@ h5
 {font-size: 0.7em;
  margin: 2px 15px 0 0 ;}
 
+#populaires i 
+{align-items: flex-end;}
 
 
    
@@ -454,27 +453,28 @@ h5
 
 /* Populaires */
 
-#populaires
+#populaires 
 {float: none;
- margin: 35px 0;
- width: 100%;}
+ display: flex;
+ width: 590px;
+ border-radius: none;}
 
  
 #populaires figure
-{margin: 58px 0 50px 30px;
- width: 400px;}
+{justify-content: space-between;
+ width: 525px;
+ margin: 25px;}
 
 #populaires figcaption
-{margin: 15px 20px 0 30px;}
+{}
 
 #populaires img
-{width: 140px;
- height: 120px;
- margin: 3px 25px 3px 3px;
- }
+{width: 220px;
+ height: 190px;
+ justify-content: flex-start;}
 
  #populaires p
-{font-size: 0.9em;
+{font-size: 1.5em;
  margin: 2px 15px 0 0 ; }
 
 .aucoeurp
@@ -493,7 +493,8 @@ h5
 
 #hebergements
 {margin: 42px 0;
- width: 100%;}
+ width: 100%;
+ background-color: none;}
 
 #h3hebergements
 {margin: 30px 0 0 45px;}
@@ -507,8 +508,8 @@ h5
 
 #hebergements img
 {margin: 2px;
- width: 230px;
- height: 110px;}
+ width: 500px;
+ height: 200px;}
 
 #hebergements p
 {font-size: 1.3em;}
@@ -520,48 +521,38 @@ h5
 /* Activités */
 
 #activites
-{margin: 20px 5px 0 5px;}
+{margin-top: 20px;}
 
 .conteneur3
 {display: flex;
- flex-direction: column;
- width: 100%;}
+ flex-direction: column;}
+
+ #activites figure
+ {width: 330px;
+  height: 160px;
+  box-shadow: 0 2px 6px 2px #EAEAEA;}
 
 
  #activites figcaption
 {margin: 15px;
  size: 1.5em;}
  
+#activites img
+{width: 550px;
+ height: 115px;}
 
-
-.small img
-{width: 200px;
- height: 165px;}
-
-
-.smallmedium img
-{width: 380px;
- height: 180px;}
-
-.smallmedium
-{height: 235px;}
-
-.medium img
-{width: 230px;
- height: 162px;}
-
-.medium
-{height: 200px;}
 
 
 /* Footer */
 
 footer
 {margin-top: 25px;
-  width: 100%;}
+ width: 100%;
+ justify-content: flex-start;}
 
 footer ul
-{font-size: 1.2em; }
+{font-size: 1.4em;
+ justify-content: flex-start; }
 
 
   }
