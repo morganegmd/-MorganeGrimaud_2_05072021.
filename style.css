@@ -35,7 +35,7 @@ header
     /* navigation */
 
 
-nav 
+nav
 {margin-top: 24px;}
 
 nav li
@@ -48,7 +48,7 @@ nav li
 .inscrire a:link
 {color: #0065FC;
  text-decoration: none;}
- 
+
 #nav a:hover
 {color: #0065FC;
  border-top: 2px #0065FC solid;
@@ -63,7 +63,7 @@ nav li
 
 #nav li
 {display: inline;}
- 
+
 
     /* Première section */
 
@@ -151,7 +151,7 @@ h5
 .filtre p
 {margin: 10px;
  font-weight: bolder;}
- 
+
  /*Fin*/
 
 #h5
@@ -173,6 +173,12 @@ h5
   /* Les conteneurs */
 
      /*Général*/
+
+.star
+{position: absolute;
+ display: flex;
+ align-content: flex-end;}
+
 
 .starblue
 {color: blue;
@@ -198,7 +204,7 @@ h5
 #titre
 {display: flex;
  justify-content: space-between;
- margin: 15px 0 0 45px;} 
+ margin: 15px 0 0 45px;}
 
 #titre i
 {color: black;
@@ -236,11 +242,11 @@ h5
 {font-size: 0.7em;
  margin: 2px 15px 0 0 ;}
 
-#populaires i 
+#populaires i
 {align-items: flex-end;}
 
 
-   
+
    /*Hébergements*/
 
 .conteneur2
@@ -277,7 +283,7 @@ h5
  border-radius: 15px 15px 0 0;}
 
 #hebergements p
-{margin: 10px 0;}
+{margin: 5px 0;}
 
 .afficher
 {margin: 20px 45px;
@@ -311,14 +317,14 @@ h5
 {margin: 15px;
  size: 1.5em;
  font-weight: bolder;}
- 
+
 
 .height img
 {width: 250px;
  height: 420px;
  border-radius: 20px 20px 0 0}
 
-.height 
+.height
 {width: 250px;}
 
 .small img
@@ -343,7 +349,7 @@ h5
 .medium
 {height: 200px;}
 
- 
+
 
    /*Footer*/
 
@@ -358,7 +364,7 @@ footer ul
   padding: 50px;
   margin: 0 65px 0 100px }
 
-footer li 
+footer li
 {padding: 10px 0;}
 
 .strong
@@ -373,77 +379,82 @@ footer li
    /*Pour mobile */
 
 
-  @media screen and (min-width: 768px) and ( max-width: 1253px) 
+  @media screen and (min-width: 768px) and ( max-width: 1253px)
 
-{ #nav
-  {margin: margin: 0 0 0 650px;}
-  
+
+{
 
 
   /* header */
 
-header
-{display: none;}
+.inscrire
+{order: 1;
+ position: absolute;
+ justify-content: flex-end;
+ align-items: flex-start;}
+
+.navh
+{order: 2;
+ width: 50%;}
+
+.nava
+{order: 3;
+width: 50%;}
+
+.navh
+{order: 2;
+ width: 50%;}
 
 #nav
-{margin: margin: 0 0 0 650px;}
-
-#nav
-{margin: 20px 0;}
+{margin: 20px 0;
+ flex: none;}
 
 #nav a:hover
 {border-top: none;
- border-bottom: 3px solid #0065FC;}
+ border-bottom: 1px solid #0065FC;}
 
 #nav a:active
 {border-top: none;
- border-bottom: 3px solid #0065FC;}
+ border-bottom: 1px solid lightgrey;}
 
 #nav  a:visited
-{border-bottom: 3px solid grey;}
+{border-bottom: 1px solid lightgrey;}
 
 /* Première section */
 
 #h4
-{font-size: 1.5em;}
+{font-size: 1.4em;}
 
 h5
-{font-size: 1.3em;}
+{font-size: 1.2em;}
 
 /* Input */
 
 .input
-{height: 80px;
- width: 100px;}
+{height: 65px;
+ width: 120px;}
 
 .input i
-{
- width: 50px;
-}
+{width: 320px;}
 
 .element2
- {
-  padding-left: 15px;
-  font-size: 17px;}
+ {font-size: 21px;}
 
 .element3
-{
- height: 60;
- width: 120px;
- padding: 13px;
-}
+ {width: 140px;
+ padding: 13px;}
 
  .element3 a
  {color: white;
-  font-size: 16px;}
+  font-size: 20px;}
 
 
   /* Filtres */
 
 .filtre
-{width: 25%};
- 
- 
+{width: 35%};
+
+
  /* Fin */
 
 #h5
@@ -453,28 +464,24 @@ h5
 
 /* Populaires */
 
-#populaires 
+#populaires
 {float: none;
  display: flex;
  width: 590px;
  border-radius: none;}
 
- 
+
 #populaires figure
 {justify-content: space-between;
  width: 525px;
  margin: 25px;}
 
 #populaires figcaption
-{}
 
-#populaires img
-{width: 220px;
- height: 190px;
- justify-content: flex-start;}
+
 
  #populaires p
-{font-size: 1.5em;
+{font-size: 142px;
  margin: 2px 15px 0 0 ; }
 
 .aucoeurp
@@ -536,7 +543,7 @@ h5
  #activites figcaption
 {margin: 15px;
  size: 1.5em;}
- 
+
 #activites img
 {width: 550px;
  height: 115px;}
