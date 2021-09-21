@@ -7,7 +7,8 @@
 
 body
 {font: normal 1.1em 'Raleway', sans-serif;
- overflow-x: hidden;}
+ overflow-x: hidden;
+ margin: 0 100px;}
 
 a
 {text-decoration: none;
@@ -119,12 +120,6 @@ h5
 {margin: 30px 0 30px 0;
  display: flex;}
 
-.filtre a:hover
-{border: 1px solid lightblue;}
-
-.filtre  a:active
-{border: 1px solid lightblue;}
-
 #filtrep
 {margin-top: 13px;
  font-weight: bolder;}
@@ -141,6 +136,13 @@ h5
  border: solid 2px #F2F2F2;
  border-radius: 30px;
  height: 40px;}
+
+.filtre li:hover
+{background-color: lightblue;}
+
+.filtre li:active
+{background-color: lightblue;}
+
 
 .filtre i
 {display: flex;
@@ -181,8 +183,7 @@ h5
 
 .star
 {position: absolute;
- display: flex;
- align-content: flex-end;}
+ margin-top: 11px; }
 
 
 .starblue
@@ -233,7 +234,7 @@ h5
  flex-direction: row;
  align-content: flex-start;
  justify-content: space-around;
- margin: 25px 30px;}
+ margin: 15px 30px;}
 
 #populaires img
 {width: 150px;
@@ -276,7 +277,7 @@ h5
  box-shadow: 6px 4px 6px 4px #D8D8D8;}
 
 #hebergements figcaption
-{margin: 15px;}
+{margin: 10px;}
 
 #hebergements img
 {margin: 2px;
@@ -444,8 +445,7 @@ h5
 
   /* Filtres */
 
-.filtre
-{};
+
 
 .filtre
 {display: flex;
@@ -560,7 +560,7 @@ h5
 
 footer
 {margin-top: 25px;
- width: 590px;
+ width:800px;
  display: flex;
  flex-direction: column;
  justify-content: flex-start;}
