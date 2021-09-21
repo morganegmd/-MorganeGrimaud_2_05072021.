@@ -1,7 +1,7 @@
 
    /* head */
 
-*
+html
 {margin: 0px;
  padding: 0px;}
 
@@ -212,18 +212,19 @@ h5
 #titre
 {display: flex;
  justify-content: space-around;
- margin: 25px 0 35px 0;}
+ margin: 15px 0 35px 0;}
 
 #titre i
 {color: black;
+ margin-top: 23px;
  font-size: 1.3em;}
 
 #populaires figure
 {display: flex;
  justify-content: space-between;
  width: 330px;
- height: 120px;
- margin: 50px 30px;
+ height: 140px;
+ margin: 25px 30px;
  border: solid 1px white;
  background-color: white;
  border-radius: 15px;
@@ -234,11 +235,11 @@ h5
  flex-direction: row;
  align-content: flex-start;
  justify-content: space-around;
- margin: 15px 30px;}
+ margin: 0 30px;}
 
 #populaires img
 {width: 150px;
- height: 115px;
+ height: 135px;
  border: white 2px solid;
  border-radius: 15px 0 0 15px;}
 
@@ -361,8 +362,8 @@ h5
    /*Footer*/
 
 footer
-{width: 100%;
- display: flex;
+{display: flex;
+ width: 100%;
  background-color: #F2F2F2;}
 
 footer ul
@@ -385,10 +386,13 @@ footer li
    /*Pour mobile */
 
 
-  @media screen and (max-width: 450px)
+  @media screen and (max-width: 800px)
 
 
 {
+
+html
+{margin: 0px;}
 
 .logo
 {position: relative;}
@@ -412,8 +416,18 @@ footer li
 
 .inscrire
 {position: absolute;
+ order: 1;
  margin: 15px;}
 
+.navh
+{order: 2;
+ width: 50px;
+ margin: 30px 0;}
+
+.nava
+{order: 3;
+ width: 50px;
+ margin: 30px 0;}
 /* Première section */
 
 #h4
@@ -535,11 +549,10 @@ h5
 .conteneur3
 {display: flex;
  flex-direction: column;
- width: 100%;
- margin: 20px 20px;}
+ width: 100%;}
 
  #activites figure
- {width: 565px;
+ {width: 100%;
   height: 180px;
   margin: 20px 0;
   box-shadow: 0 2px 6px 2px #EAEAEA;}
