@@ -7,8 +7,10 @@ html
 
 body
 {font: normal 1.1em 'Raleway', sans-serif;
- overflow-x: hidden;
- margin: 0 150px;}
+ overflow-x: hidden;}
+
+#container
+{margin: 0 100px;}
 
 a
 {text-decoration: none;
@@ -48,16 +50,14 @@ nav li
 {color: #0065FC;
  text-decoration: none;}
 
-#nav a:hover
-{color: #0065FC;
- border-top: 2px #0065FC solid;
+#nav li:hover
+{border-top: 2px #0065FC solid;
  padding-top: 47px;}
 
-#nav a:active
-{color: #0065FC;
- border-top: 2px #0065FC solid;}
+#nav li:active
+{border-top: 2px #0065FC solid;}
 
-#nav  a:visited
+#nav  li:visited
 {color: grey;}
 
 #nav li
@@ -183,8 +183,7 @@ h5
      /*Général*/
 
 .star
-{position: absolute;
- margin-top: 11px; }
+{position: absolute;}
 
 
 .starblue
@@ -203,15 +202,15 @@ h5
    /*Populaires*/
 
 #populaires
-{position: relative;
- width: 35%;
+{width: 35%;
  height: 620px;
  border: solid 1px #F2F2F2 ;
  background-color: #F2F2F2;
  border-radius: 15px;}
 
 #titre
-{display: flex;
+{position: relative;
+ display: flex;
  justify-content: space-around;
  margin: 15px 0 35px 0;}
 
@@ -223,8 +222,8 @@ h5
 #populaires figure
 {display: flex;
  justify-content: space-between;
- width: 330px;
- height: 140px;
+ width: 80%;
+ height: 135px;
  margin: 25px 30px;
  border: solid 1px white;
  background-color: white;
@@ -236,20 +235,30 @@ h5
  flex-direction: row;
  align-content: flex-start;
  justify-content: space-around;
- margin: 0 30px;}
+ margin: 15px;}
 
 #populaires img
-{width: 150px;
- height: 135px;
+{width: 170px;
+ height: 130px;
  border: white 2px solid;
  border-radius: 15px 0 0 15px;}
 
+
 #populaires p
-{font-size: 0.8em;}
+{font-size: 0.8em;
+ margin: 2px;}
+
+#populaires .star
+{margin-top: 20px;}
+
+.aucoeur
+{margin-top: -25px;}
+
+.aucoeurp 
+{font-size: 0.3em;}
 
 #populaires i
 {align-items: flex-end;}
-
 
 
    /*Hébergements*/
@@ -269,10 +278,10 @@ h5
 {margin: 15px 0 15px 30px;}
 
 #hebergements figure
-{width: 240px;
+{width: 180px;
  justify-content: space-around;
  height: 210px;
- margin: 20px 30px;
+ margin: 20px 20px;
  border: solid 1px white ;
  background-color: white;
  border-radius: 15px;
@@ -283,7 +292,7 @@ h5
 
 #hebergements img
 {margin: 1px;
- width: 235px;
+ width: 175px;
  height: 110px;
  border: white 2px solid;
  border-radius: 15px 15px 0 0;}
@@ -291,6 +300,9 @@ h5
 #hebergements p
 {margin: 5px 0;
  font-size: 0.8em;}
+
+#hebergements .star
+{margin-top: 10px;}
 
 .afficher
 {margin: 20px 30px;
@@ -300,7 +312,7 @@ h5
    /*Activités*/
 
 #activites
-{margin: 40px 0 0px 0;}
+{margin-top:40px;}
 
 .conteneur3
 {display: flex;
@@ -314,7 +326,7 @@ h5
 {display: flex;
  flex: wrap;
  justify-content: space-around;
- margin: 20px 60px 30px 0;
+ margin: 20px 35px 30px 0;
 
  border: none;
  background-color: white;
@@ -328,31 +340,30 @@ h5
 
 
 .height img
-{width: 285px;
- height: 400px;
+{width: 210px;
+ height: 410px;
  border-radius: 20px 20px 0 0}
 
 .height
-{width: 285px;}
+{height: 480px;
+ width: 210px;}
 
 .small img
-{width: 340px;
- height: 150px;
- border-radius: 15px 15px 0 0}
-
-.small
-{width: 340px;}
-
-.smallmedium img
-{width: 340px;
+{width: 280px;
  height: 160px;
  border-radius: 15px 15px 0 0}
 
+
+.smallmedium img
+{width: 300px;
+ height: 170px;
+ border-radius: 15px 15px 0 0}
+
 .smallmedium
-{height: 215px;}
+{height: 220px;}
 
 .medium img
-{width: 340px;
+{width: 300px;
  height: 140px;
  border-radius: 15px 15px 0 0}
 
@@ -388,12 +399,12 @@ footer li
    /*Pour mobile */
 
 
-  @media screen and (min-width: 300px) and (max-width: 670px)
+  @media screen and (min-width: 300px) and (max-width: 900px)
 
 
 {
 
-body
+html
 {margin: 0px;
  padding: 0px;}
 
@@ -403,24 +414,25 @@ body
   /* header */
 
 #nav
-{flex: none;
- width: 100%;}
+{display: flex;
+ width: 100%;
+ }
 
-#nav a:hover
+#nav li:hover
 {border-top: none;
  border-bottom: 1px solid #0065FC;}
 
-#nav a:active
+#nav li:active
 {border-top: none;
  border-bottom: 1px solid lightgrey;}
 
-#nav  a:visited
+#nav  li:visited
 {border-bottom: 1px solid lightgrey;}
 
 .inscrire
 {position: absolute;
  order: 1;
- margin: -60px 60px;}
+ margin-top: 1px;}
 
 .navh
 {order: 2;
@@ -497,7 +509,7 @@ h5
  border-radius: none;}
 
 #populaires figure
-{width: 100%;
+{width: 80%;
  height: 110px;
  margin: 30px 0;
  display: flex;
@@ -520,7 +532,7 @@ h5
 {font-size: 0.7em;}
 
 #populaires .star
-{margin-top: 10px;}
+{margin-bottom: 5px;}
 
 
 /* Hébergements */
@@ -532,8 +544,8 @@ h5
 
 #hebergements
 {margin: 20px 0;
- width: 590px;
- background-color: none;}
+ width: 80%;
+ background-color: transparent;}
 
 #h3hebergements
 {margin: 15px 20px;}
@@ -548,7 +560,7 @@ h5
 
 #hebergements img
 {margin:  1px;
- width: 365px;
+ width: 368px;
  height: 115px;}
 
 #hebergements p
