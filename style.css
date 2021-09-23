@@ -327,7 +327,6 @@ h5
  flex: wrap;
  justify-content: space-around;
  margin: 20px 35px 30px 0;
-
  border: none;
  background-color: white;
  border-radius: 20px;
@@ -404,19 +403,18 @@ footer li
 
 {
 
-html
-{margin: 0px;
- padding: 0px;}
+
+#container
+{margin: 0;}
 
 .logo
 {position: relative;}
 
+
   /* header */
 
 #nav
-{display: flex;
- width: 100%;
- }
+{display: flex;}
 
 #nav li:hover
 {border-top: none;
@@ -432,18 +430,12 @@ html
 .inscrire
 {position: absolute;
  order: 1;
- margin-top: 1px;}
+ top: 45px;
+ font-weight: bolder;}
 
-.navh
+.ancre
 {order: 2;
- width: 50%;
- margin: 30px 0;}
-
-.nava
-{order: 3;
- width: 50%;
- margin: 30px 0;}
-
+ justify-content: space-around;}
 
 /* Première section */
 
@@ -509,16 +501,15 @@ h5
  border-radius: none;}
 
 #populaires figure
-{width: 80%;
- height: 110px;
- margin: 30px 0;
- display: flex;
- justify-content: center;
- align-items: space-around;}
+{width: 98%;
+ height: 120px;
+ margin: 20px 0;
+ align-items: space-around;
+ box-shadow: 0 2px 6px 2px #EAEAEA;}
 
 #populaires img
 {width: 160px ;
- height: 105px;
+ height: 115px;
  margin: 1px;}
 
 #populaires figcaption
@@ -544,7 +535,8 @@ h5
 
 #hebergements
 {margin: 20px 0;
- width: 80%;
+ width: 100%;
+ border: 1px solid transparent;
  background-color: transparent;}
 
 #h3hebergements
@@ -552,16 +544,17 @@ h5
 
 #hebergements figure
 {width: 100%;
- height: 215px;
- margin : 20px 0;}
+ height: 220px;
+ justify-content: space-around;
+ margin: 20px 0;
+ box-shadow: 0 2px 6px 2px #EAEAEA;}
 
 #hebergements figcaption
 {margin: 5px 10px;}
 
 #hebergements img
-{margin:  1px;
- width: 368px;
- height: 115px;}
+{width: 98%;
+ height: 110px;}
 
 #hebergements p
 {font-size: 1em;}
@@ -583,31 +576,24 @@ h5
  flex-direction: column;
  width: 100%;}
 
- #activites figure
- {width: 100%;
-  height: 160px;
-  margin: 20px 0;
-  box-shadow: 0 2px 6px 2px #EAEAEA;}
+#activites figure
+{width: 100%;
+ height: 160px;
+ margin: 20px 0;
+ box-shadow: 0 2px 6px 2px #EAEAEA;}
 
-
- #activites figcaption
+#activites figcaption
 {margin: 15px;
  size: 1.5em;}
 
 #activites img
-{width: 345px;
- height: 105px;}
+{width: 330px;
+ height: 110px;}
 
-
-/* Footer */
-
-footer
-{width:100%;}
+/*Footer*/
 
 footer ul
-{font-size: 1em;
- margin: 15px 10px;}
+{margin: 15px 0;}
 
 
-
-  }
+}
