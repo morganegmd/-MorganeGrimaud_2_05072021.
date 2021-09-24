@@ -224,7 +224,6 @@ h5
  width: 80%;
  min-width: 320px;
  height: 135px;
- min-height: 150px;
  margin: 25px 30px;
  border: solid 1px white;
  background-color: white;
@@ -423,9 +422,17 @@ footer li
 
    /*Pour mobile */
 
+@media screen and (min-width: 737px) and (max-width: 1368px)
+
+{
+
+#populaires figure
+{min-height: 150px;}
+
+}
+
 
   @media screen and (min-width: 300px) and (max-width: 736px)
-
 
 {
 
