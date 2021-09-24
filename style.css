@@ -48,14 +48,14 @@ nav li
 {color: #0065FC;
  text-decoration: none;}
 
-#nav li:hover
+#nav a:hover
 {border-top: 2px #0065FC solid;
- padding-top: 42px;}
+ padding-top: 40px;}
 
-#nav li:active
+#nav a:active
 {border-top: 2px #0065FC solid;}
 
-#nav  li:visited
+#nav  a:visited
 {color: grey;}
 
 #nav li
@@ -263,7 +263,8 @@ h5
 
 .conteneur2
 {display: flex;
- flex-wrap: wrap;}
+ flex-wrap: wrap;
+}
 
 #hebergements
 {position: relative;
@@ -391,57 +392,80 @@ footer li
 {margin-top: 15px;}
 
 
+/* Adaptations */
 
+
+@media screen and (min-width: 740px) and (max-width: 1368px;)
+
+{
+
+#locations
+{display: flex;
+ flex-direction: column;}
+
+}
 
    /*Pour mobile */
 
 
-  @media screen and (min-width: 300px) and (max-width: 900px)
+  @media screen and (min-width: 300px) and (max-width: 736px)
 
 
 {
 
-
 #container
 {margin: 0;}
 
-
-
+.logo
+{margin: 0;
+ padding: 0;}
 
   /* header */
 
-#nav
-{display: flex;}
+nav ul
+{padding-bottom: 13px;
+ display: flex;
+ justify-content: space-between;
+ width: 100%;
+ border-bottom: solid lightgrey 1px;}
 
 #nav li:hover
 {border-top: none;
  border-bottom: 1px solid #0065FC;}
 
-#nav li:active
-{border-top: none;
- border-bottom: 1px solid lightgrey;}
-
-#nav  li:visited
-{border-bottom: 1px solid lightgrey;}
-
 .inscrire
 {position: absolute;
  order: 1;
  top: 45px;
- right: -50px;
+ right: 15px;
  font-weight: bolder;}
 
-.ancre
-{position: relative;
- order: 2;
- width: 100%;
+.ancre 
+{margin-top: 50px;}
+
+.navh
+{padding-right: 30px;
+ width: 50%;}
+
+.nava
+{padding-left: 25px;
+ width: 50%;
  display: flex;
- justify-content: space-between;
- border-bottom: solid 1px lightgrey;}
+ justify-content: center;}
+
 
 .ancre li:hover
 {border-top: none;
  border-bottom: 1px solid #0065FC;}
+
+.ancre li:active
+{border-top: none;
+ border-bottom: 1px solid #0065FC;}
+
+.ancre li:visited
+{border-top: none;
+ border-bottom: 1px solid black;}
+
 
 /* Première section */
 
@@ -456,21 +480,21 @@ h5
 
 .input
 {height: 45px;
- width: 80px;}
+ width: 30px;}
 
 .input i
-{width: 133px;}
+{width: 125px;}
 
 .element2
  {font-size: 14px;}
 
 .element3
  {width: 115px;
- padding: 13px;}
+ padding: 10px;}
 
 .element3 a
  {color: white;
-  font-size: 14px;}
+  font-size: 13px;}
 
 
   /* Filtres */
@@ -491,6 +515,9 @@ h5
 {display: flex
  flex-wrap: wrap;}
 
+.filtre li
+{font-size: 0.9em;}
+
 #locations
 {display: flex;
  flex-direction: column;}
@@ -499,11 +526,10 @@ h5
 
 #titre
 {justify-content: space-between;
- margin: 15px 20px;}
+ margin: 15px 0;}
 
 #populaires
 {width: 100%;
- margin: 0 13px;
  height: 540px;
  border-radius: none;}
 
@@ -539,11 +565,12 @@ h5
 
 .conteneur2
 
-{width: 100%;}
+{width: 100%;
+ justify-content: space-between;}
 
 #hebergements
 {margin: 20px 10px;
- width: 100%;
+ width: 325px;
  border: 1px solid transparent;
  background-color: transparent;}
 
@@ -551,7 +578,7 @@ h5
 {margin: 15px 20px;}
 
 #hebergements figure
-{width: 100%;
+{width: 325px;
  height: 220px;
  justify-content: space-around;
  margin: 20px 0;
@@ -561,7 +588,7 @@ h5
 {margin: 5px 10px;}
 
 #hebergements img
-{width: 98%;
+{width: 330px;
  height: 110px;}
 
 #hebergements p
@@ -576,16 +603,16 @@ h5
 
 /* Activités */
 
-#activites
-{margin: 15px;}
+
 
 .conteneur3
 {display: flex;
  flex-direction: column;
+ justify-content: space-around;
  width: 100%;}
 
 #activites figure
-{width: 100%;
+{width: 325px;
  height: 160px;
  margin: 20px 0;
  box-shadow: 0 2px 6px 2px #EAEAEA;}
@@ -595,8 +622,11 @@ h5
  size: 1.5em;}
 
 #activites img
-{width: 330px;
+{width: 325px;
  height: 110px;}
+
+
+
 
 /*Footer*/
 
