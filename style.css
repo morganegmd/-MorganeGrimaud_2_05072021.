@@ -29,8 +29,7 @@ header
 {display: flex;
  flex-wrap: wrap;
  justify-content: space-between;
- margin: 25px 0 30px 0;}
-
+ margin-top: 25px;}
 
     /* navigation */
 
@@ -39,7 +38,7 @@ nav ul
 {display: flex;}
 
 nav li
-{margin-right: 30px;}
+{padding: 15px;}
 
 .ancre a:link
 {color: grey;}
@@ -48,27 +47,27 @@ nav li
 {color: #0065FC;
  text-decoration: none;}
 
-#nav a:hover
+nav a:hover
 {border-top: 2px #0065FC solid;
  padding-top: 40px;}
 
-#nav a:active
+nav a:active
 {border-top: 2px #0065FC solid;}
 
-#nav  a:visited
+nav  a:visited
 {color: grey;}
 
-#nav li
+nav li
 {display: inline;}
 
 
     /* Première section */
 
-#h4
+.search h4
 {font-size: 1em;
  margin-bottom: 10px;}
 
-h5
+.search h5
 {font-size: 0.7em;
  margin-top: 3px;
  color: grey;}
@@ -119,14 +118,14 @@ h5
 {margin: 30px 0 30px 0;
  display: flex;}
 
-#filtrep
+.filtre p
 {margin-top: 25px;
  font-weight: bolder;}
 
-.filtrediv
+.filtre div
 {display: flex;}
 
-.filtreul
+.filtre ul
 {display: flex;
  flex-wrap: wrap;}
   
@@ -160,11 +159,11 @@ h5
 
  /*Fin*/
 
-#h5
+.h5
 {display: flex;
  margin: 10px 0;}
 
-#h5 i
+.h5 i
 {display: flex;
  align-items: center;
  font-size: 0.7em;
@@ -192,14 +191,14 @@ h5
 {color: lightgrey;
  font-size: 0.8em;}
 
-#locations
+.locations
 {display: flex;
  flex-direction: row-reverse;
  justify-content: space-between;}
 
    /*Populaires*/
 
-#populaires
+.populaires
 {width: 30%;
  min-width: 380px;
  height: 645px;
@@ -207,18 +206,18 @@ h5
  background-color: #F2F2F2;
  border-radius: 15px;}
 
-#titre
+.titre
 {position: relative;
  display: flex;
  justify-content: space-around;
  margin: 15px 0 35px 0;}
 
-#titre i
+.titre i
 {color: black;
  margin-top: 23px;
  font-size: 1.3em;}
 
-#populaires figure
+.populaires figure
 {display: flex;
  justify-content: space-between;
  width: 80%;
@@ -230,25 +229,25 @@ h5
  border-radius: 15px;
  box-shadow: 5px 3px 5px 3px #D8D8D8;}
 
-#populaires figcaption
+.populaires figcaption
 {display: flex;
  flex-direction: row;
  align-content: flex-start;
  justify-content: space-around;
  margin: 15px;}
 
-#populaires img
+.populaires img
 {width: 170px;
  height: 130px;
  border: white 2px solid;
  border-radius: 15px 0 0 15px;}
 
 
-#populaires p
+.populaires p
 {font-size: 0.8em;
  margin: 2px;}
 
-#populaires .star
+.populaires .star
 {margin-top: 20px;}
 
 .aucoeur
@@ -257,7 +256,7 @@ h5
 .aucoeurp 
 {font-size: 0.3em;}
 
-#populaires i
+.populaires i
 {align-items: flex-end;}
 
 
@@ -268,17 +267,18 @@ h5
  flex-wrap: wrap;
 }
 
-#hebergements
+.hebergements
 {position: relative;
  width: 65%;
  border: solid 1px #F2F2F2 ;
  background-color: #F2F2F2;
  border-radius: 15px;}
 
-#h3hebergements
+
+.hebergements h3
 {margin: 15px 0 15px 45px;}
 
-#hebergements figure
+.hebergements figure
 {width: 245px;
  justify-content: space-around;
  height: 220px;
@@ -288,21 +288,21 @@ h5
  border-radius: 15px;
  box-shadow: 6px 4px 6px 4px #D8D8D8;}
 
-#hebergements figcaption
+.hebergements figcaption
 {margin: 10px;}
 
-#hebergements img
+.hebergements img
 {margin: 1px;
  width: 240px;
  height: 110px;
  border: white 2px solid;
  border-radius: 15px 15px 0 0;}
 
-#hebergements p
+.hebergements p
 {margin: 5px 0;
  font-size: 0.9em;}
 
-#hebergements .star
+.hebergements .star
 {margin-top: 10px;}
 
 .afficher
@@ -312,7 +312,7 @@ h5
 
    /*Activités*/
 
-#activites
+.activites
 {margin-top:40px;}
 
 .conteneur3
@@ -323,7 +323,7 @@ h5
 { display: flex;
   flex-direction: column;}
 
-#activites figure
+.activites figure
 {display: flex;
  justify-content: space-around;
  margin: 20px 50px 30px 0;
@@ -332,7 +332,7 @@ h5
  border-radius: 20px;
  box-shadow: 6px 4px 6px 4px #D8D8D8;}
 
- #activites figcaption
+.activites figcaption
 {margin: 15px;
  font-size: 0.9em;
  font-weight: bolder;}
@@ -381,12 +381,10 @@ footer
 
 footer ul
 {float: left;
- justify-content: space-around;
- padding: 0 120px;
- margin: 25px 0;
- font-size: 18px;
- text-align: left;
- margin: auto;}
+ width: 100%;
+ display: flexbox;
+ justify-content: right;
+ font-size: 16px;}
 
 footer li
 {padding: 10px 0;}
@@ -404,49 +402,49 @@ footer li
 
 {
 
-#locations
+.locations
 {display: flex;
  align-items: center;
  justify-content: center;}
 
 
-#populaires figure
+.populaires figure
 {height: 135px;}
 
-#populaires img
+.populaires img
 {height: 130px;}
 
-#populaires .star
+.populaires .star
 {margin-top: 5px;}
 
-#hebergements
+.hebergements
 {margin-top:  25px;}
 
-#hebergements figure
+.hebergements figure
 {width: 70%;}
 
-#hebergements img
+.hebergements img
 {width: 100%;}
 
-#hebergements p
+.hebergements p
 {font-size: 1.1em;}
 
-#hebergements .star
+.hebergements .star
 {margin-top: 3px;
  font-size: 1.3em;}
 
 
-#activites
+.activites
 {display: flex;
  align-items: center;
  justify-content: center;
  margin: 15px 335px;}
 
-#activites figure
+.activites figure
 {width: 420px;
  height: 150px;}
 
-#activites img
+.activites img
 {width: 420px;
  height: 110px;}
 
@@ -471,19 +469,19 @@ footer li
 #container
 {margin: 0;}
 
-#locations
+.locations
 {display: flex;
  flex-direction: column;}
 
-#populaires
+.populaires
 {width: 60%;
  height: 680px;
  margin: 15px 0;}
 
-#populaires figure
+.populaires figure
 {width: 50%;}
 
-#hébergements
+.hebergements
 {width: 50%;}
 
 }
@@ -500,63 +498,61 @@ footer li
 {margin: 0;}
 
 .logo
-{margin: 0;
+{position: relative;
+ margin: 0;
  padding: 0;}
 
   /* header */
 
 nav ul
-{padding-bottom: 13px;
+{padding-bottom: 35px;
  display: flex;
  justify-content: space-between;
- width: 100%;
- border-bottom: solid lightgrey 1px;}
+ width: 100%;}
 
-#nav li:hover
-{border-top: none;
- border-bottom: 1px solid #0065FC;}
 
 .inscrire
 {position: absolute;
  order: 1;
- top: 45px;
+ top: 30px;
  right: 15px;
  font-weight: bolder;}
 
-.ancre 
-{margin-top: 50px;}
-
 .navh
 {padding-right: 30px;
- width: 50%;}
+ padding-top: 35px;
+ width: 50%;
+ border-bottom: 2px solid lightgrey;}
 
 .nava
 {padding-left: 25px;
+   padding-top: 35px;
  width: 50%;
  display: flex;
- justify-content: center;}
+ justify-content: center;
+ border-bottom: 2px solid lightgrey;}
 
 
-.ancre li:hover
+nav a:hover
 {border-top: none;
- border-bottom: 1px solid #0065FC;}
+ border-bottom: 2px solid #0065FC;}
 
-.ancre li:active
+nav a:active
 {border-top: none;
- border-bottom: 1px solid #0065FC;}
+ 
+ border-bottom: 2px solid #0065FC;}
 
-.ancre li:visited
-{border-top: none;
- border-bottom: 1px solid black;}
+nav a:visited
+{border-top: none;}
 
 
 /* Première section */
 
-#h4
+.search h4
 {font-size: 1.1em;
  margin-bottom: 20px;}
 
-h5
+.search h5
 {font-size: 0.8em;}
 
 /* Input */
@@ -589,35 +585,35 @@ h5
  flex-wrap: wrap;
  margin: 30px 0;}
 
-#filtrep
+.filtre p
 {margin-top: 13px;
  font-weight: bolder;}
 
 
-.filtreul
+.filtre ul
 {display: flex;
  flex-wrap: wrap;}
 
 .filtre li
 {font-size: 0.9em;}
 
-#locations
+.locations
 {display: flex;
  flex-direction: column;}
 
 /* Populaires */
 
-#titre
+.titre
 {justify-content: space-around;
  margin: 15px 0;
  font-size: 0.8em;}
 
-#populaires
+.populaires
 {width: 80%;
  height: 540px;
  border-radius: 0px;}
 
-#populaires figure
+.populaires figure
 {width: 90%;
  height: 120px;
  justify-content: center;
@@ -625,22 +621,22 @@ h5
  align-content: space-around;
  box-shadow: 0 2px 6px 2px #EAEAEA;}
 
-#populaires img
+.populaires img
 {width: 160px ;
  height: 115px;
  margin: 1px;}
 
-#populaires figcaption
+.populaires figcaption
 {margin: 15px;}
 
- #populaires p
+.populaires p
 {font-size: 0.8em;
  margin: 3px 10px 0 0 ; }
 
 .aucoeurp
 {font-size: 0.7em;}
 
-#populaires .star
+.populaires .star
 {margin-top: 12px;}
 
 
@@ -652,33 +648,33 @@ h5
 {width: 100%;
  justify-content: space-between;}
 
-#hebergements
+.hebergements
 {margin: 20px 10px;
  width: 325px;
  border: 1px solid transparent;
  background-color: transparent;}
 
-#h3hebergements
+.h3hebergements
 {margin: 15px 20px;}
 
-#hebergements figure
+.hebergements figure
 {width: 325px;
  height: 220px;
  justify-content: space-around;
  margin: 20px 0;
  box-shadow: 0 2px 6px 2px #EAEAEA;}
 
-#hebergements figcaption
+.hebergements figcaption
 {margin: 5px 10px;}
 
-#hebergements img
+.hebergements img
 {width: 325px;
  height: 110px;}
 
-#hebergements p
+.hebergements p
 {font-size: 1em;}
 
-#hebergements .star
+.hebergements .star
 {margin: 12px 0;}
 
 .afficher
@@ -695,17 +691,17 @@ h5
  justify-content: space-around;
  width: 100%;}
 
-#activites figure
+.activites figure
 {width: 325px;
  height: 160px;
  margin: 20px 0;
  box-shadow: 0 2px 6px 2px #EAEAEA;}
 
-#activites figcaption
+.activites figcaption
 {margin: 15px;
  font-size: 1em;}
 
-#activites img
+.activites img
 {width: 325px;
  height: 110px;}
 
