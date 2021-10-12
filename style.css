@@ -307,7 +307,6 @@
 
          position: relative;
          display: flex;
-         justify-content: space-between;
          width: 80%;
          min-width: 80%;
          height: 125px;
@@ -335,7 +334,7 @@
 
       .populaires p {
   
-         font-size: 0.7em; 
+         font-size: 0.8em; 
          margin: 4px;
       }
 
@@ -405,7 +404,7 @@
       #hebergements p {
 
          margin: 5px 0;
-         font-size: 0.8em;
+         font-size: 0.9em;
       }
 
       #hebergements .star {
@@ -455,7 +454,7 @@
       #activites figcaption {
   
          margin: 15px;
-         font-size: 0.8em;
+         font-size: 0.9em;
          font-weight: bolder;
       }
 
@@ -750,8 +749,14 @@
 
             .populaires img {
                
-               width: 400px;
+               width: 380px;
                height: 130px;
+            }
+
+            .populaires figcaption {
+
+               margin-left: 25px;
+               padding: 10px;
             }
 
             .populaires p {
@@ -849,7 +854,7 @@
 
                   display: flex;
                   flex-direction: column;
-                  justify-content: center;
+                  padding: 15px;
                   margin: 0 35px;
                   width: 100%;
                }
@@ -914,25 +919,42 @@
   
                   position: absolute;
                   order: 1;
-                  top: 45px;
-                  right: 5px;
+                  top: 40px;
+                  right: 15px;
                   font-weight: bolder;
                }
 
                .navh {
   
-                  padding-top: 35px;
-                  width: 50%;
+                  width: 49.5%;
+                  margin-top: 20px;
                   border-bottom: 2px solid lightgrey;
                }
 
                .nava {
   
-                  padding-top: 35px;
-                  width: 50%;
-                  display: flex;
+                  width: 49.5%;
+                  margin-top: 20px;
                   justify-content: center;
                   border-bottom: 2px solid lightgrey;
+               }
+
+               nav a:hover {
+
+                  border-top:none;
+                  padding: 0;
+               }
+
+               nav a:active {
+
+               
+                  border-top: none;
+                  padding:0;
+               }
+
+               nav li {
+                  
+                  padding-bottom: 10px;
                }
 
                nav li:hover {
@@ -994,7 +1016,7 @@
 
          .element3 {
   
-            width: 115px;
+            width: 90px;
             padding: 10px;
          }
 
@@ -1083,7 +1105,8 @@
    
          .populaires {
 
-            width: 100%;
+            width: 99%;
+            max-width: 1300px;
             height: 540px;
             border-radius: 0px;
          }
@@ -1093,8 +1116,8 @@
             width: 95%;
             height: 120px;
             justify-content: center;
+            justify-content: space-around;
             margin: 20px 0;
-            align-content: space-around;
             box-shadow: 0 2px 6px 2px #EAEAEA;
          }
  
@@ -1108,6 +1131,7 @@
          .populaires figcaption {
   
             margin: 15px;
+            padding: 10px;
          }
 
          .populaires p {
@@ -1144,12 +1168,12 @@
 
          .h3hebergements {
   
-            margin: 15px 10px;
+            margin: 15px;
          }
 
          #hebergements figure {
   
-            width: 97%;
+            width: 96%;
             height: 220px;
             justify-content: space-around;
             margin: 20px 0;
@@ -1163,7 +1187,8 @@
 
          #hebergements img {
   
-            width: 100%;
+            margin: 0;
+            width: 357px;
             height: 110px;
          }
 
@@ -1174,7 +1199,7 @@
 
          #hebergements .star {
             
-            font-size: 0.6em;
+            font-size: 0.8em;
          }
 
          .afficher {
@@ -1187,13 +1212,17 @@
        /* Activités */
 
 
+         .titreact {
+
+            margin-left : 5px;
+         }
 
          .conteneur3 {
   
             display: flex;
             flex-direction: column;
             justify-content: space-around;
-            width: 100%;
+            width: 80%;
          }
   
          #activites figure {
@@ -1212,7 +1241,7 @@
 
          #activites img {
 
-            width: 365px;
+            width: 360px;
             margin: 0;
             height: 110px;
          }
@@ -1223,7 +1252,7 @@
 
    
          footer {
-            width: 100%;
+            width: 99.5%;
             display: flex;
             flex-direction: column;
          }
