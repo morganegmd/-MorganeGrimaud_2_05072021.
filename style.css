@@ -56,7 +56,7 @@
 
    .ancre a:link {
   
-      color: grey;
+      color: black;
    }
 
 
@@ -136,6 +136,7 @@
       padding-left: 15px;
       font-weight: bold;
       font-size: 17px;
+      color: grey;
    }
    
    .element3 {
@@ -339,7 +340,8 @@
       }
 
       .populaires .star {
-  
+         
+         font-size: 0.8em;
          position: absolute;
          bottom: 5px;
       }
@@ -357,6 +359,7 @@
 
          display: flex;
          flex-wrap: wrap;
+         justify-content: space-around;
       }
 
       #hebergements {
@@ -407,6 +410,7 @@
 
       #hebergements .star {
 
+         font-size: 0.8em;
          position: absolute;
          bottom: 5px;
       }
@@ -422,7 +426,7 @@
 
 
       #activites {
-
+         
          margin-top:40px;
       }
 
@@ -430,6 +434,7 @@
 
          display: flex;
          flex-wrap: wrap;
+         justify-content: space-between;
       }
 
       .pics { 
@@ -440,8 +445,7 @@
 
       #activites figure {
 
-         justify-content: space-around;
-         margin: 20px 30px 30px 0;
+         margin: 20px 15px 30px 0;
          border: none;
          background-color: white;
          border-radius: 20px;
@@ -457,46 +461,46 @@
 
       .height {
 
-         width: 240px;
+         width: 280px;
          height: 455px;
       }
 
       .height img {
 
-         width: 240px;
+         width: 280px;
          height: 410px;
          border-radius: 20px 20px 0 0;
       }
 
       .small {
 
-         width: 280px;
+         width: 320px;
          height: 200px;
       }
 
       .small img {
 
-         width: 280px;
+         width: 100%;
          height: 160px;
          border-radius: 15px 15px 0 0;
       }
 
       .smallmedium {
 
-         width: 280px;
+         width: 310px;
          height: 215px;
       }
 
       .smallmedium img {
   
-         width: 280px;
+         width: 100%;
          height: 170px;
          border-radius: 15px 15px 0 0;
       }
 
       .medium img {
  
-         width: 280px;
+         width: 100%;
          height: 155px;
          border-radius: 15px 15px 0 0;
       }
@@ -773,7 +777,8 @@
 
             #hebergements figure{
    
-               width: 90%;
+               width: 200px;
+               height: 270px;
             }
 
 
@@ -910,21 +915,21 @@
                   position: absolute;
                   order: 1;
                   top: 45px;
-                  right: 65px;
+                  right: 5px;
                   font-weight: bolder;
                }
 
                .navh {
   
                   padding-top: 35px;
-                  width: 45%;
+                  width: 50%;
                   border-bottom: 2px solid lightgrey;
                }
 
                .nava {
   
                   padding-top: 35px;
-                  width: 45%;
+                  width: 50%;
                   display: flex;
                   justify-content: center;
                   border-bottom: 2px solid lightgrey;
@@ -958,15 +963,16 @@
    
             .search h4 {
  
-               margin-left: 3px;
-               font-size: 0.8em;
+               margin-left: 5px;
+               font-size: 1em;
                margin-bottom: 20px;
             }
  
             .search h5 {
 
-               margin: 3px;
-               font-size: 0.6em;
+               margin-left: 5px;
+               margin-top: 15px;
+               font-size: 0.8em;
             }
 
 
@@ -975,15 +981,15 @@
    
           .input {
 
-            margin: 10px;
+            margin: 5px;
             height: 45px;
-            width: 15px;
+            width: 30px;
          }
    
          .element2 {
 
-            font-size: 12px;
-            width: 180px;
+            font-size: 14px;
+            width: 250px;
          }
 
          .element3 {
@@ -1026,7 +1032,7 @@
   
             display: flex;
             flex-wrap: wrap;   
-            margin: 30px 0;
+            margin: 30px 0 10px 0;
    
          }
  
@@ -1051,7 +1057,7 @@
             
             display: inline-flex;
             margin-left: 1px;
-            font-size: 0.8em;
+            font-size: 0.9em;
          }
 
       /*Conteneurs*/
@@ -1077,14 +1083,14 @@
    
          .populaires {
 
-            width: 99%;
+            width: 100%;
             height: 540px;
             border-radius: 0px;
          }
 
          .populaires figure {
   
-            width: 90%;
+            width: 95%;
             height: 120px;
             justify-content: center;
             margin: 20px 0;
@@ -1112,7 +1118,7 @@
          
          .populaires .star {
             
-            font-size: 0.6em;
+            font-size: 0.8em;
          }
 
 
@@ -1123,7 +1129,7 @@
          .conteneur2 {
   
             width: 100%;
-            justify-content: space-between;
+            flex-direction: column;
          }
 
          #hebergements {
@@ -1138,12 +1144,12 @@
 
          .h3hebergements {
   
-            margin: 15px 20px;
+            margin: 15px 10px;
          }
 
          #hebergements figure {
   
-            width: 100%;
+            width: 97%;
             height: 220px;
             justify-content: space-around;
             margin: 20px 0;
@@ -1192,7 +1198,7 @@
   
          #activites figure {
 
-            width: 80%;
+            width: 97%;
             height: 170px;
             margin: 20px 5px;
             box-shadow: 0 2px 6px 2px #EAEAEA; 
@@ -1206,7 +1212,7 @@
 
          #activites img {
 
-            width: 300px;
+            width: 365px;
             margin: 0;
             height: 110px;
          }
@@ -1217,7 +1223,7 @@
 
    
          footer {
-
+            width: 100%;
             display: flex;
             flex-direction: column;
          }
