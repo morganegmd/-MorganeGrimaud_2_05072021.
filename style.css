@@ -70,18 +70,20 @@
    nav a:hover {
   
       border-top: 2px #0065FC solid;
+      color: #0065FC;
       padding-top: 41px;
    }
 
    nav a:active {
 
       border-top: 2px #0065FC solid;
+      color:#0065FC;
       padding-top: 41px;
    }
 
    nav  a:visited {
 
-      color:lightgray;
+      color:gray;
    }
 
    nav li {  
